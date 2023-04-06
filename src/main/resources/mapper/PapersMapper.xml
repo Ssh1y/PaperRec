@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssh1y.paperrec.mapper.PapersMapper">
+
+    <resultMap id="BaseResultMap" type="com.ssh1y.paperrec.entity.Papers">
+            <id property="paperid" column="PaperID" jdbcType="INTEGER"/>
+            <result property="papername" column="PaperName" jdbcType="VARCHAR"/>
+            <result property="paperauthor" column="PaperAuthor" jdbcType="VARCHAR"/>
+            <result property="authorunit" column="AuthorUnit" jdbcType="VARCHAR"/>
+            <result property="papersource" column="PaperSource" jdbcType="VARCHAR"/>
+            <result property="paperkeywords" column="PaperKeywords" jdbcType="VARCHAR"/>
+            <result property="paperabstract" column="PaperAbstract" jdbcType="VARCHAR"/>
+            <result property="paperpubtime" column="PaperPubTime" jdbcType="VARCHAR"/>
+            <result property="paperurl" column="PaperURL" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        PaperID,PaperName,PaperAuthor,
+        AuthorUnit,PaperSource,PaperKeywords,
+        PaperAbstract,PaperPubTime,PaperURL
+    </sql>
+</mapper>
