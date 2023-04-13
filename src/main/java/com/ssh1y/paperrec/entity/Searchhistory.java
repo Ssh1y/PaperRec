@@ -4,50 +4,36 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
 import java.io.Serializable;
 import java.util.Date;
+import lombok.Data;
 
 /**
+ * 
  * @author chenweihong
- * @TableName Ratings
+ * @TableName SearchHistory
  */
-@TableName(value = "Ratings")
+@TableName(value ="SearchHistory")
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
-public class Ratings implements Serializable {
+public class Searchhistory implements Serializable {
     /**
-     *
+     * 
      */
     @TableId(type = IdType.AUTO)
     private Integer id;
 
     /**
-     *
-     */
-    private Integer paperid;
-
-    /**
-     *
+     * 
      */
     private Integer userid;
 
     /**
-     *
+     * 
      */
     private String query;
 
     /**
-     *
-     */
-    private Integer rating;
-
-    /**
-     *
+     * 
      */
     private Date timestamp;
 

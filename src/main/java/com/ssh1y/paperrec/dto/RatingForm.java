@@ -1,4 +1,4 @@
-package com.ssh1y.paperrec.entity;
+package com.ssh1y.paperrec.dto;
 
 
 import lombok.AllArgsConstructor;
@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class RatingForm {
 
-    private Integer recommendationId;
-    private Integer ratedPaperId;
+    private Integer paperId;
+
     private Integer rating;
 }

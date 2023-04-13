@@ -3,9 +3,11 @@ package com.ssh1y.paperrec;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * @author chenweihong
+ */
 @SpringBootApplication
 public class PaperRecApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(PaperRecApplication.class, args);
     }
